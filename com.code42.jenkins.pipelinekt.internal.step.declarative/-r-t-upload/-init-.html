@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>RTUpload.<init> - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.internal.step.declarative</a>&nbsp;/&nbsp;<a href="index.html">RTUpload</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="com.code42.jenkins.pipelinekt.internal.step.declarative.RTUpload$&lt;init&gt;(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.artifactory.RTSpec, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)"></a>
+<code><span class="identifier">RTUpload</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.RTUpload$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.artifactory.RTSpec, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/serverID">serverID</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.RTUpload$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.artifactory.RTSpec, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/buildName">buildName</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.RTUpload$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.artifactory.RTSpec, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/buildNumber">buildNumber</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.RTUpload$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.artifactory.RTSpec, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/failNoOp">failNoOp</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bool</span>&nbsp;<span class="symbol">=</span>&nbsp;false.boolVar()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.RTUpload$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.artifactory.RTSpec, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/spec">spec</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.artifactory/-r-t-spec/index.html"><span class="identifier">RTSpec</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.RTUpload$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.artifactory.RTSpec, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/specPath">specPath</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code>
+<p>Generates the necessary code to upload artifacts to Artifactory</p>
+<h3>Parameters</h3>
+<p><a name="serverID"></a>
+<code>serverID</code> - the server id to upload to</p>
+<p><a name="buildName"></a>
+<code>buildName</code> - the build name</p>
+<p><a name="buildNumber"></a>
+<code>buildNumber</code> - the build number</p>
+<p><a name="failNoOp"></a>
+<code>failNoOp</code> - specifies whether to fail the build in case no files are uploaded or downloaded</p>
+<p><a name="spec"></a>
+<code>spec</code> - an object representing File spec(s), which specifies the files that should be uploaded</p>
+<p><a name="specPath"></a>
+<code>specPath</code> - path to a File that manages FIle spec(s) (rather than adding it to a closure like the spec property)</p>
+</BODY>
+</HTML>

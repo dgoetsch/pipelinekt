@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BooleanStatement - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.core.conditional</a>&nbsp;/&nbsp;<a href="./index.html">BooleanStatement</a><br/>
+<br/>
+<h1>BooleanStatement</h1>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">BooleanStatement</span></code> <a href="https://github.com/code42/pipelinekt/tree/master/core/src/main/kotlin/com/code42/jenkins/pipelinekt/core/conditional/BooleanStatement.kt#L5">(source)</a>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-binary-operator/index.html">BinaryOperator</a></h4>
+</td>
+<td>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">BinaryOperator</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BooleanStatement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-literal/index.html">Literal</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Literal</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BooleanStatement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-not/index.html">Not</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Not</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BooleanStatement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-string-operator/index.html">StringOperator</a></h4>
+</td>
+<td>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">StringOperator</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BooleanStatement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-variable/index.html">Variable</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Variable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BooleanStatement</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="to-groovy.html">toGroovy</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">toGroovy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.dsl.step.conditional/&&.html">&amp;&amp;</a></h4>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a><span class="symbol">.</span><span class="identifier">&amp;&amp;</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.step.conditional$&&(com.code42.jenkins.pipelinekt.core.conditional.BooleanStatement, com.code42.jenkins.pipelinekt.core.conditional.BooleanStatement)/other">other</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BooleanStatement</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a><span class="symbol">.</span><span class="identifier">&amp;&amp;</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.step.conditional$&&(com.code42.jenkins.pipelinekt.core.conditional.BooleanStatement, com.code42.jenkins.pipelinekt.core.vars.Var)/other">other</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.dsl.step.conditional/==.html">==</a></h4>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a><span class="symbol">.</span><span class="identifier">==</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.step.conditional$==(com.code42.jenkins.pipelinekt.core.conditional.BooleanStatement, kotlin.String)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a><span class="symbol">.</span><span class="identifier">==</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.step.conditional$==(com.code42.jenkins.pipelinekt.core.conditional.BooleanStatement, com.code42.jenkins.pipelinekt.core.conditional.BooleanStatement)/other">other</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BooleanStatement</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.dsl.step.conditional/||.html">||</a></h4>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a><span class="symbol">.</span><span class="identifier">||</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.step.conditional$||(com.code42.jenkins.pipelinekt.core.conditional.BooleanStatement, com.code42.jenkins.pipelinekt.core.conditional.BooleanStatement)/other">other</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BooleanStatement</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a></code><br/>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a><span class="symbol">.</span><span class="identifier">||</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.step.conditional$||(com.code42.jenkins.pipelinekt.core.conditional.BooleanStatement, com.code42.jenkins.pipelinekt.core.vars.Var)/other">other</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">BooleanStatement</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

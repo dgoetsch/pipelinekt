@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PublishHtml - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.internal.step.declarative</a>&nbsp;/&nbsp;<a href="./index.html">PublishHtml</a><br/>
+<br/>
+<h1>PublishHtml</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PublishHtml</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.step/-declarative-step.html"><span class="identifier">DeclarativeStep</span></a><span class="symbol">, </span><a href="../../com.code42.jenkins.pipelinekt.core.step/-singleton-step/index.html"><span class="identifier">SingletonStep</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/internal/src/main/kotlin/com/code42/jenkins/pipelinekt/internal/step/declarative/PublishHtml.kt#L9">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">PublishHtml</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.PublishHtml$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/reportDir">reportDir</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.PublishHtml$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/reportFiles">reportFiles</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.PublishHtml$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/reportName">reportName</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.PublishHtml$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/allowMissing">allowMissing</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bool</span>&nbsp;<span class="symbol">=</span>&nbsp;true.boolVar()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.PublishHtml$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/alwaysLinkToLastBuild">alwaysLinkToLastBuild</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bool</span>&nbsp;<span class="symbol">=</span>&nbsp;true.boolVar()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.PublishHtml$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/keepAll">keepAll</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bool</span>&nbsp;<span class="symbol">=</span>&nbsp;true.boolVar()<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="allow-missing.html">allowMissing</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">allowMissing</span><span class="symbol">: </span><span class="identifier">Bool</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="always-link-to-last-build.html">alwaysLinkToLastBuild</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">alwaysLinkToLastBuild</span><span class="symbol">: </span><span class="identifier">Bool</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="keep-all.html">keepAll</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">keepAll</span><span class="symbol">: </span><span class="identifier">Bool</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="report-dir.html">reportDir</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">reportDir</span><span class="symbol">: </span><span class="identifier">Str</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="report-files.html">reportFiles</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">reportFiles</span><span class="symbol">: </span><span class="identifier">Str</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="report-name.html">reportName</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">reportName</span><span class="symbol">: </span><span class="identifier">Str</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="to-groovy.html">toGroovy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toGroovy</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.PublishHtml$toGroovy(com.code42.jenkins.pipelinekt.core.writer.GroovyWriter)/writer">writer</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.writer/-groovy-writer/index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

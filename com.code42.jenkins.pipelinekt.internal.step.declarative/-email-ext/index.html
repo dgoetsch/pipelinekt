@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EmailExt - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.internal.step.declarative</a>&nbsp;/&nbsp;<a href="./index.html">EmailExt</a><br/>
+<br/>
+<h1>EmailExt</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">EmailExt</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.step/-declarative-step.html"><span class="identifier">DeclarativeStep</span></a><span class="symbol">, </span><a href="../../com.code42.jenkins.pipelinekt.core.step/-singleton-step/index.html"><span class="identifier">SingletonStep</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/internal/src/main/kotlin/com/code42/jenkins/pipelinekt/internal/step/declarative/EmailExt.kt#L15">(source)</a>
+<p>Inject email into steps</p>
+<h3>Parameters</h3>
+<p><a name="buildemail"></a>
+<code>buildemail</code> - the build email to inject</p>
+<p><a name="steps"></a>
+<code>steps</code> - the steps to inject</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Inject email into steps</p>
+<code><span class="identifier">EmailExt</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.EmailExt$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.notifications.RecipientProvider)))/subject">subject</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.EmailExt$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.notifications.RecipientProvider)))/body">body</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.EmailExt$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.notifications.RecipientProvider)))/emailRecipients">emailRecipients</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.EmailExt$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.notifications.RecipientProvider)))/recipientProviders">recipientProviders</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core.notifications/-recipient-provider/index.html"><span class="identifier">RecipientProvider</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="body.html">body</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">body</span><span class="symbol">: </span><span class="identifier">Str</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="email-recipients.html">emailRecipients</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">emailRecipients</span><span class="symbol">: </span><span class="identifier">Str</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="recipient-providers.html">recipientProviders</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">recipientProviders</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core.notifications/-recipient-provider/index.html"><span class="identifier">RecipientProvider</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subject.html">subject</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">subject</span><span class="symbol">: </span><span class="identifier">Str</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="to-groovy.html">toGroovy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toGroovy</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.EmailExt$toGroovy(com.code42.jenkins.pipelinekt.core.writer.GroovyWriter)/writer">writer</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.writer/-groovy-writer/index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MatrixAxisContext - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.dsl.stage</a>&nbsp;/&nbsp;<a href="./index.html">MatrixAxisContext</a><br/>
+<br/>
+<h1>MatrixAxisContext</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MatrixAxisContext</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core.stage/-matrix-axis/index.html"><span class="identifier">MatrixAxis</span></a><span class="symbol">&gt;</span></code> <a href="https://github.com/code42/pipelinekt/tree/master/dsl/src/main/kotlin/com/code42/jenkins/pipelinekt/dsl/stage/MatrixAxisContext.kt#L10">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">MatrixAxisContext</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext$<init>(java.util.Queue((com.code42.jenkins.pipelinekt.core.stage.MatrixAxis)))/axes">axes</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/Queue.html"><span class="identifier">Queue</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core.stage/-matrix-axis/index.html"><span class="identifier">MatrixAxis</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;LinkedBlockingQueue()<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="axes.html">axes</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">axes</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Queue.html"><span class="identifier">Queue</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core.stage/-matrix-axis/index.html"><span class="identifier">MatrixAxis</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="axis.html">axis</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">axis</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext$axis(kotlin.String, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext$axis(kotlin.String, kotlin.String)/values">values</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">axis</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext$axis(kotlin.String, kotlin.collections.List((kotlin.String)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext$axis(kotlin.String, kotlin.collections.List((kotlin.String)))/values">values</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">axis</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext$axis(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/name">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext$axis(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/values">values</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">axis</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext$axis(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)))/name">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext$axis(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)))/values">values</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">Str</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.dsl/into.html">into</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">, </span><span class="identifier">Dsl</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">Dsl</span><span class="symbol">.</span><span class="identifier">into</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl$into(com.code42.jenkins.pipelinekt.dsl.into.Dsl, kotlin.Function1((com.code42.jenkins.pipelinekt.dsl.into.Dsl, kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Dsl</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

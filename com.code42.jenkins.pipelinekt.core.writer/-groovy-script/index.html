@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GroovyScript - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.core.writer</a>&nbsp;/&nbsp;<a href="./index.html">GroovyScript</a><br/>
+<br/>
+<h1>GroovyScript</h1>
+<code><span class="keyword">interface </span><span class="identifier">GroovyScript</span></code> <a href="https://github.com/code42/pipelinekt/tree/master/core/src/main/kotlin/com/code42/jenkins/pipelinekt/core/writer/GroovyWriter.kt#L10">(source)</a>
+<p>A class that can be mapped to a jenkinsfile</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="to-groovy.html">toGroovy</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">toGroovy</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyScript$toGroovy(com.code42.jenkins.pipelinekt.core.writer.GroovyWriter)/writer">writer</span><span class="symbol">:</span>&nbsp;<a href="../-groovy-writer/index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core/-agent.html">Agent</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Agent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core.stage/-exclude-axis/index.html">ExcludeAxis</a></h4>
+</td>
+<td>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">ExcludeAxis</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core.stage/-matrix-axis/index.html">MatrixAxis</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MatrixAxis</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core.stage/-matrix-body/index.html">MatrixBody</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MatrixBody</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core.stage/-matrix-exclude/index.html">MatrixExclude</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MatrixExclude</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core/-option.html">Option</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Option</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core/-parameter/index.html">Parameter</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Parameter</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core/-pipeline/index.html">Pipeline</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Pipeline</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core.method/-pipeline-method/index.html">PipelineMethod</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">PipelineMethod</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core/-post/index.html">Post</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Post</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core.stage/-stage/index.html">Stage</a></h4>
+</td>
+<td>
+<p>A declarative Jenkinsfile Stage</p>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">Stage</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core.step/-step/index.html">Step</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Step</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core/-tool.html">Tool</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Tool</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core/-trigger.html">Trigger</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Trigger</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.core/-when.html">When</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">When</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">GroovyScript</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

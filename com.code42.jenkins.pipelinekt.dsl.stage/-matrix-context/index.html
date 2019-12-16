@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MatrixContext - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.dsl.stage</a>&nbsp;/&nbsp;<a href="./index.html">MatrixContext</a><br/>
+<br/>
+<h1>MatrixContext</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MatrixContext</span></code> <a href="https://github.com/code42/pipelinekt/tree/master/dsl/src/main/kotlin/com/code42/jenkins/pipelinekt/dsl/stage/MatrixContext.kt#L17">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">MatrixContext</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$<init>(com.code42.jenkins.pipelinekt.dsl.stage.StageWrapperContext((com.code42.jenkins.pipelinekt.dsl.stage.NestedStageContext)), com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext, com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.stage.MatrixExclude)), com.code42.jenkins.pipelinekt.dsl.SingletonDslContext((com.code42.jenkins.pipelinekt.core.Agent)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.When)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.Tool)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.dsl.post.PostContext)/nestedStageContext">nestedStageContext</span><span class="symbol">:</span>&nbsp;<a href="../-stage-wrapper-context/index.html"><span class="identifier">StageWrapperContext</span></a><span class="symbol">&lt;</span><a href="../-nested-stage-context/index.html"><span class="identifier">NestedStageContext</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$<init>(com.code42.jenkins.pipelinekt.dsl.stage.StageWrapperContext((com.code42.jenkins.pipelinekt.dsl.stage.NestedStageContext)), com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext, com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.stage.MatrixExclude)), com.code42.jenkins.pipelinekt.dsl.SingletonDslContext((com.code42.jenkins.pipelinekt.core.Agent)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.When)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.Tool)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.dsl.post.PostContext)/axesContext">axesContext</span><span class="symbol">:</span>&nbsp;<a href="../-matrix-axis-context/index.html"><span class="identifier">MatrixAxisContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;MatrixAxisContext()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$<init>(com.code42.jenkins.pipelinekt.dsl.stage.StageWrapperContext((com.code42.jenkins.pipelinekt.dsl.stage.NestedStageContext)), com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext, com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.stage.MatrixExclude)), com.code42.jenkins.pipelinekt.dsl.SingletonDslContext((com.code42.jenkins.pipelinekt.core.Agent)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.When)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.Tool)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.dsl.post.PostContext)/excludesContext">excludesContext</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core.stage/-matrix-exclude/index.html"><span class="identifier">MatrixExclude</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;DslContext()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$<init>(com.code42.jenkins.pipelinekt.dsl.stage.StageWrapperContext((com.code42.jenkins.pipelinekt.dsl.stage.NestedStageContext)), com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext, com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.stage.MatrixExclude)), com.code42.jenkins.pipelinekt.dsl.SingletonDslContext((com.code42.jenkins.pipelinekt.core.Agent)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.When)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.Tool)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.dsl.post.PostContext)/agentContext">agentContext</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-singleton-dsl-context/index.html"><span class="identifier">SingletonDslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-agent.html"><span class="identifier">Agent</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;SingletonDslContext()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$<init>(com.code42.jenkins.pipelinekt.dsl.stage.StageWrapperContext((com.code42.jenkins.pipelinekt.dsl.stage.NestedStageContext)), com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext, com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.stage.MatrixExclude)), com.code42.jenkins.pipelinekt.dsl.SingletonDslContext((com.code42.jenkins.pipelinekt.core.Agent)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.When)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.Tool)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.dsl.post.PostContext)/whenContext">whenContext</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-when.html"><span class="identifier">When</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;DslContext()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$<init>(com.code42.jenkins.pipelinekt.dsl.stage.StageWrapperContext((com.code42.jenkins.pipelinekt.dsl.stage.NestedStageContext)), com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext, com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.stage.MatrixExclude)), com.code42.jenkins.pipelinekt.dsl.SingletonDslContext((com.code42.jenkins.pipelinekt.core.Agent)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.When)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.Tool)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.dsl.post.PostContext)/toolContext">toolContext</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-tool.html"><span class="identifier">Tool</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;DslContext()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$<init>(com.code42.jenkins.pipelinekt.dsl.stage.StageWrapperContext((com.code42.jenkins.pipelinekt.dsl.stage.NestedStageContext)), com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext, com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.stage.MatrixExclude)), com.code42.jenkins.pipelinekt.dsl.SingletonDslContext((com.code42.jenkins.pipelinekt.core.Agent)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.When)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.Tool)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.dsl.post.PostContext)/optionContext">optionContext</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-stage-option.html"><span class="identifier">StageOption</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;DslContext()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$<init>(com.code42.jenkins.pipelinekt.dsl.stage.StageWrapperContext((com.code42.jenkins.pipelinekt.dsl.stage.NestedStageContext)), com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext, com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.stage.MatrixExclude)), com.code42.jenkins.pipelinekt.dsl.SingletonDslContext((com.code42.jenkins.pipelinekt.core.Agent)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.When)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.Tool)), com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.dsl.post.PostContext)/postContext">postContext</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl.post/-post-context/index.html"><span class="identifier">PostContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;PostContext()<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="agent-context.html">agentContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">agentContext</span><span class="symbol">: </span><a href="../../com.code42.jenkins.pipelinekt.dsl/-singleton-dsl-context/index.html"><span class="identifier">SingletonDslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-agent.html"><span class="identifier">Agent</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="axes-context.html">axesContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">axesContext</span><span class="symbol">: </span><a href="../-matrix-axis-context/index.html"><span class="identifier">MatrixAxisContext</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="excludes-context.html">excludesContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">excludesContext</span><span class="symbol">: </span><a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core.stage/-matrix-exclude/index.html"><span class="identifier">MatrixExclude</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="nested-stage-context.html">nestedStageContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">nestedStageContext</span><span class="symbol">: </span><a href="../-stage-wrapper-context/index.html"><span class="identifier">StageWrapperContext</span></a><span class="symbol">&lt;</span><a href="../-nested-stage-context/index.html"><span class="identifier">NestedStageContext</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="option-context.html">optionContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">optionContext</span><span class="symbol">: </span><a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-stage-option.html"><span class="identifier">StageOption</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-context.html">postContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">postContext</span><span class="symbol">: </span><a href="../../com.code42.jenkins.pipelinekt.dsl.post/-post-context/index.html"><span class="identifier">PostContext</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tool-context.html">toolContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">toolContext</span><span class="symbol">: </span><a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-tool.html"><span class="identifier">Tool</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="when-context.html">whenContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">whenContext</span><span class="symbol">: </span><a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-when.html"><span class="identifier">When</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="agent.html">agent</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">agent</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$agent(kotlin.Function1((com.code42.jenkins.pipelinekt.dsl.SingletonDslContext((com.code42.jenkins.pipelinekt.core.Agent)), kotlin.Unit)))/agentBlock">agentBlock</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-singleton-dsl-context/index.html"><span class="identifier">SingletonDslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-agent.html"><span class="identifier">Agent</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="axes.html">axes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">axes</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$axes(kotlin.Function1((com.code42.jenkins.pipelinekt.dsl.stage.MatrixAxisContext, kotlin.Unit)))/axesBlock">axesBlock</span><span class="symbol">:</span>&nbsp;<a href="../-matrix-axis-context/index.html"><span class="identifier">MatrixAxisContext</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="excludes.html">excludes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">excludes</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$excludes(kotlin.Function1((com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.stage.MatrixExclude)), kotlin.Unit)))/excludesBlock">excludesBlock</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core.stage/-matrix-exclude/index.html"><span class="identifier">MatrixExclude</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="options.html">options</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">options</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$options(kotlin.Function1((com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.StageOption)), kotlin.Unit)))/optionsBlock">optionsBlock</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-stage-option.html"><span class="identifier">StageOption</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post.html">post</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">post</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$post(kotlin.Function1((com.code42.jenkins.pipelinekt.dsl.post.PostContext, kotlin.Unit)))/postBlock">postBlock</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl.post/-post-context/index.html"><span class="identifier">PostContext</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stages.html">stages</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stages</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$stages(kotlin.Function1((com.code42.jenkins.pipelinekt.dsl.stage.StageWrapperContext((com.code42.jenkins.pipelinekt.dsl.stage.NestedStageContext)), kotlin.Unit)))/stagesBlock">stagesBlock</span><span class="symbol">:</span>&nbsp;<a href="../-stage-wrapper-context/index.html"><span class="identifier">StageWrapperContext</span></a><span class="symbol">&lt;</span><a href="../-nested-stage-context/index.html"><span class="identifier">NestedStageContext</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tools.html">tools</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">tools</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$tools(kotlin.Function1((com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.Tool)), kotlin.Unit)))/toolsBlock">toolsBlock</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-tool.html"><span class="identifier">Tool</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="when.html">when</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">when</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.dsl.stage.MatrixContext$when(kotlin.Function1((com.code42.jenkins.pipelinekt.dsl.DslContext((com.code42.jenkins.pipelinekt.core.When)), kotlin.Unit)))/whenBlock">whenBlock</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.dsl/-dsl-context/index.html"><span class="identifier">DslContext</span></a><span class="symbol">&lt;</span><a href="../../com.code42.jenkins.pipelinekt.core/-when.html"><span class="identifier">When</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

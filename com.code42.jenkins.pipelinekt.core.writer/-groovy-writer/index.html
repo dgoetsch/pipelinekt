@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GroovyWriter - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.core.writer</a>&nbsp;/&nbsp;<a href="./index.html">GroovyWriter</a><br/>
+<br/>
+<h1>GroovyWriter</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">GroovyWriter</span></code> <a href="https://github.com/code42/pipelinekt/tree/master/core/src/main/kotlin/com/code42/jenkins/pipelinekt/core/writer/GroovyWriter.kt#L30">(source)</a>
+<p>Writes a GroovyScript to a PrintWriter.</p>
+<h3>Parameters</h3>
+<p><a name="writer"></a>
+<code>writer</code> - destination to write to.</p>
+<p><a name="indent"></a>
+<code>indent</code> - the level of indent, initizlized to 0</p>
+<p><a name="context"></a>
+<code>context</code> - declarative or scripted</p>
+<p><a name="indentStr"></a>
+<code>indentStr</code> - </p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Writes a GroovyScript to a PrintWriter.</p>
+<code><span class="identifier">GroovyWriter</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$<init>(java.io.PrintWriter, kotlin.Int, com.code42.jenkins.pipelinekt.core.writer.Context, kotlin.String)/writer">writer</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html"><span class="identifier">PrintWriter</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$<init>(java.io.PrintWriter, kotlin.Int, com.code42.jenkins.pipelinekt.core.writer.Context, kotlin.String)/indent">indent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$<init>(java.io.PrintWriter, kotlin.Int, com.code42.jenkins.pipelinekt.core.writer.Context, kotlin.String)/context">context</span><span class="symbol">:</span>&nbsp;<a href="../-context/index.html"><span class="identifier">Context</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Context.Declarative<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$<init>(java.io.PrintWriter, kotlin.Int, com.code42.jenkins.pipelinekt.core.writer.Context, kotlin.String)/indentStr">indentStr</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"  "<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="context.html">context</a></h4>
+</td>
+<td>
+<p>declarative or scripted</p>
+<code><span class="keyword">val </span><span class="identifier">context</span><span class="symbol">: </span><a href="../-context/index.html"><span class="identifier">Context</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="indent.html">indent</a></h4>
+</td>
+<td>
+<p>the level of indent, initizlized to 0</p>
+<code><span class="keyword">val </span><span class="identifier">indent</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="indent-str.html">indentStr</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">indentStr</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="writer.html">writer</a></h4>
+</td>
+<td>
+<p>destination to write to.</p>
+<code><span class="keyword">val </span><span class="identifier">writer</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/PrintWriter.html"><span class="identifier">PrintWriter</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="closure.html">closure</a></h4>
+</td>
+<td>
+<p>Write a groovy step to the writer, will look like</p>
+<code><span class="keyword">fun </span><span class="identifier">closure</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.String, kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)), com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/prefix">prefix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.String, kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)), com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/body">body</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.String, kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)), com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/param">param</span><span class="symbol">:</span>&nbsp;<span class="identifier">Variable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">closure</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.String, kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)))/prefix">prefix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.String, kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)))/body">body</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Write a closure to the output.  will look like</p>
+<code><span class="keyword">fun </span><span class="identifier">closure</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.collections.List((kotlin.String)), kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)), com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/prefix">prefix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.collections.List((kotlin.String)), kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)), com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/body">body</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.collections.List((kotlin.String)), kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)), com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/param">param</span><span class="symbol">:</span>&nbsp;<span class="identifier">Variable</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">closure</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.collections.List((kotlin.String)), kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)))/prefix">prefix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$closure(kotlin.collections.List((kotlin.String)), kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)))/body">body</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="inner.html">inner</a></h4>
+</td>
+<td>
+<p>Return a new GroovyWRiter that writes at one level of nested indentation</p>
+<code><span class="keyword">fun </span><span class="identifier">inner</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">GroovyWriter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scripted.html">scripted</a></h4>
+</td>
+<td>
+<p>ensure scripted context</p>
+<code><span class="keyword">fun </span><span class="identifier">scripted</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$scripted(kotlin.Function1((com.code42.jenkins.pipelinekt.core.writer.GroovyWriter, kotlin.Unit)))/body">body</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="writeln.html">writeln</a></h4>
+</td>
+<td>
+<p>Write a ln to the output</p>
+<code><span class="keyword">fun </span><span class="identifier">writeln</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter$writeln(kotlin.String)/string">string</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="for-file.html">forFile</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">forFile</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter.Companion$forFile(java.io.File, kotlin.String)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.writer.GroovyWriter.Companion$forFile(java.io.File, kotlin.String)/indentStr">indentStr</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"  "<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">GroovyWriter</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ScriptedParallel - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.internal.step.scripted</a>&nbsp;/&nbsp;<a href="./index.html">ScriptedParallel</a><br/>
+<br/>
+<h1>ScriptedParallel</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ScriptedParallel</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.step/-scripted-step/index.html"><span class="identifier">ScriptedStep</span></a><span class="symbol">, </span><a href="../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/internal/src/main/kotlin/com/code42/jenkins/pipelinekt/internal/step/scripted/ScriptedParallel.kt#L18">(source)</a>
+<p>This is not the preferred way to do parallel work.  Hover, pipelines support a limited amount of parallelism
+in declarative stages.  Do NOT use this unless you have exceeded the max parallelism in declarative stages.</p>
+<p>Using this method causes the Blue Ocean UI to misbhave - the ui gets slow and
+stages don't display correctly.</p>
+<h3>Parameters</h3>
+<p><a name="scriptedStages"></a>
+<code>scriptedStages</code> - a set of psuedo stages to execute similar to parallel stages in a declarative context.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>This is not the preferred way to do parallel work.  Hover, pipelines support a limited amount of parallelism
+in declarative stages.  Do NOT use this unless you have exceeded the max parallelism in declarative stages.</p>
+<code><span class="identifier">ScriptedParallel</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.ScriptedParallel$<init>(kotlin.collections.Map((com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.step.Step)))/scriptedStages">scriptedStages</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Str</span><span class="symbol">,</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="scripted-stages.html">scriptedStages</a></h4>
+</td>
+<td>
+<p>a set of psuedo stages to execute similar to parallel stages in a declarative context.</p>
+<code><span class="keyword">val </span><span class="identifier">scriptedStages</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Str</span><span class="symbol">,</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="any.html">any</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">any</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.ScriptedParallel$any(kotlin.Function1((com.code42.jenkins.pipelinekt.core.step.Step, kotlin.Boolean)))/fn">fn</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains.html">contains</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.ScriptedParallel$contains(com.code42.jenkins.pipelinekt.core.step.Step)/other">other</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-empty.html">isEmpty</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scripted-groovy.html">scriptedGroovy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">scriptedGroovy</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.ScriptedParallel$scriptedGroovy(com.code42.jenkins.pipelinekt.core.writer.GroovyWriter)/writer">writer</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.writer/-groovy-writer/index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

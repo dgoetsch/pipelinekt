@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NestedStep - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.core.step</a>&nbsp;/&nbsp;<a href="./index.html">NestedStep</a><br/>
+<br/>
+<h1>NestedStep</h1>
+<code><span class="keyword">interface </span><span class="identifier">NestedStep</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-step/index.html"><span class="identifier">Step</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/core/src/main/kotlin/com/code42/jenkins/pipelinekt/core/step/NestedStep.kt#L3">(source)</a>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="steps.html">steps</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">steps</span><span class="symbol">: </span><a href="../-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="any.html">any</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">any</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.step.NestedStep$any(kotlin.Function1((com.code42.jenkins.pipelinekt.core.step.Step, kotlin.Boolean)))/fn">fn</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains.html">contains</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.step.NestedStep$contains(com.code42.jenkins.pipelinekt.core.step.Step)/other">other</span><span class="symbol">:</span>&nbsp;<a href="../-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-empty.html">isEmpty</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.internal.step.declarative/-closure/index.html">Closure</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Closure</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-declarative-step.html"><span class="identifier">DeclarativeStep</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">NestedStep</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.internal.step.declarative/-dir/index.html">Dir</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Dir</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-declarative-step.html"><span class="identifier">DeclarativeStep</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">NestedStep</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.internal.step.scripted/-if/index.html">If</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">If</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-scripted-step/index.html"><span class="identifier">ScriptedStep</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">NestedStep</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.internal.step.scripted/-node/index.html">Node</a></h4>
+</td>
+<td>
+<p>You should not have to use this step.  This is from the old scripted pipelines.  However, this is present for users
+who require this functionality; for example parallelism that exceeds the max allowed by declarative stages, see
+com.code42.jenkins.pipelinekt.step.scripted.ScriptedParallel</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Node</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-scripted-step/index.html"><span class="identifier">ScriptedStep</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">NestedStep</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.internal.step.declarative/-retry/index.html">Retry</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Retry</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-declarative-step.html"><span class="identifier">DeclarativeStep</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">NestedStep</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.internal.step.declarative/-ssh-agent/index.html">SshAgent</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SshAgent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-declarative-step.html"><span class="identifier">DeclarativeStep</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">NestedStep</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.internal.step.scripted/-variable-assignment/index.html">VariableAssignment</a></h4>
+</td>
+<td>
+<p>Declare a variable and assign it to the output of some steps</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">VariableAssignment</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-scripted-step/index.html"><span class="identifier">ScriptedStep</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">NestedStep</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.internal.step.declarative/-with-credentials/index.html">WithCredentials</a></h4>
+</td>
+<td>
+<p>Inject credentials to some steps</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WithCredentials</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-declarative-step.html"><span class="identifier">DeclarativeStep</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">NestedStep</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../com.code42.jenkins.pipelinekt.internal.step.declarative/-with-env/index.html">WithEnv</a></h4>
+</td>
+<td>
+<p>Make environment variables available to steps</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">WithEnv</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-declarative-step.html"><span class="identifier">DeclarativeStep</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">NestedStep</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

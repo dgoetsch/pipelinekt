@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Node - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.internal.step.scripted</a>&nbsp;/&nbsp;<a href="./index.html">Node</a><br/>
+<br/>
+<h1>Node</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Node</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.step/-scripted-step/index.html"><span class="identifier">ScriptedStep</span></a><span class="symbol">, </span><a href="../../com.code42.jenkins.pipelinekt.core.step/-nested-step/index.html"><span class="identifier">NestedStep</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/internal/src/main/kotlin/com/code42/jenkins/pipelinekt/internal/step/scripted/Node.kt#L20">(source)</a>
+<p>You should not have to use this step.  This is from the old scripted pipelines.  However, this is present for users
+who require this functionality; for example parallelism that exceeds the max allowed by declarative stages, see
+com.code42.jenkins.pipelinekt.step.scripted.ScriptedParallel</p>
+<p>Using this method causes the Blue Ocean UI to misbhave - the ui gets slow and
+stages don't display correctly.</p>
+<h3>Parameters</h3>
+<p><a name="label"></a>
+<code>label</code> - the node label to choose</p>
+<p><a name="steps"></a>
+<code>steps</code> - the steps to execute on the node</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>You should not have to use this step.  This is from the old scripted pipelines.  However, this is present for users
+who require this functionality; for example parallelism that exceeds the max allowed by declarative stages, see
+com.code42.jenkins.pipelinekt.step.scripted.ScriptedParallel</p>
+<code><span class="identifier">Node</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Node$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.step.Step)/label">label</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Node$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.step.Step)/steps">steps</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="label.html">label</a></h4>
+</td>
+<td>
+<p>the node label to choose</p>
+<code><span class="keyword">val </span><span class="identifier">label</span><span class="symbol">: </span><span class="identifier">Str</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="steps.html">steps</a></h4>
+</td>
+<td>
+<p>the steps to execute on the node</p>
+<code><span class="keyword">val </span><span class="identifier">steps</span><span class="symbol">: </span><a href="../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="scripted-groovy.html">scriptedGroovy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">scriptedGroovy</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Node$scriptedGroovy(com.code42.jenkins.pipelinekt.core.writer.GroovyWriter)/writer">writer</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.writer/-groovy-writer/index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

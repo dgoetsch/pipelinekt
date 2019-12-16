@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>InfluxDbPublisher - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.internal.step.declarative</a>&nbsp;/&nbsp;<a href="./index.html">InfluxDbPublisher</a><br/>
+<br/>
+<h1>InfluxDbPublisher</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">InfluxDbPublisher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.step/-declarative-step.html"><span class="identifier">DeclarativeStep</span></a><span class="symbol">, </span><a href="../../com.code42.jenkins.pipelinekt.core.step/-singleton-step/index.html"><span class="identifier">SingletonStep</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/internal/src/main/kotlin/com/code42/jenkins/pipelinekt/internal/step/declarative/InfluxDbPublisher.kt#L8">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">InfluxDbPublisher</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$<init>(com.code42.jenkins.pipelinekt.core.vars.Var, kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var)), kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var)))), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)))), com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$<init>(com.code42.jenkins.pipelinekt.core.vars.Var, kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var)), kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var)))), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)))), com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/customData">customData</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;emptyMap()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$<init>(com.code42.jenkins.pipelinekt.core.vars.Var, kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var)), kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var)))), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)))), com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/customDataTags">customDataTags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Str</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;emptyMap()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$<init>(com.code42.jenkins.pipelinekt.core.vars.Var, kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var)), kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var)))), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)))), com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/customDataMap">customDataMap</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;emptyMap()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$<init>(com.code42.jenkins.pipelinekt.core.vars.Var, kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var)), kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var)))), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)))), com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/customDataMapTags">customDataMapTags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Str</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;emptyMap()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$<init>(com.code42.jenkins.pipelinekt.core.vars.Var, kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var)), kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var)))), kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)))), com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/customPrefix">customPrefix</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="custom-data.html">customData</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">customData</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="custom-data-map.html">customDataMap</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">customDataMap</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="custom-data-map-tags.html">customDataMapTags</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">customDataMapTags</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Str</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="custom-data-tags.html">customDataTags</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">customDataTags</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">Str</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="custom-prefix.html">customPrefix</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">customPrefix</span><span class="symbol">: </span><span class="identifier">Str</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target.html">target</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">target</span><span class="symbol">: </span><a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="groovy-string.html">groovyString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">groovyString</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$groovyString(kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var)), kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$groovyString(kotlin.collections.Map((kotlin.String, com.code42.jenkins.pipelinekt.core.vars.Var)), kotlin.String)/indent">indent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="groovy-string-for-nested-map.html">groovyStringForNestedMap</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">groovyStringForNestedMap</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$groovyStringForNestedMap(kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var)))), kotlin.String)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<span class="keyword">out</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.vars/-var/index.html"><span class="identifier">Var</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$groovyStringForNestedMap(kotlin.collections.Map((kotlin.String, kotlin.collections.Map((, com.code42.jenkins.pipelinekt.core.vars.Var)))), kotlin.String)/indent">indent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-groovy.html">toGroovy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toGroovy</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.declarative.InfluxDbPublisher$toGroovy(com.code42.jenkins.pipelinekt.core.writer.GroovyWriter)/writer">writer</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.writer/-groovy-writer/index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

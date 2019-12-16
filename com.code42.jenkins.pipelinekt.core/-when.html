@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>When - pipelinekt</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="index.html">com.code42.jenkins.pipelinekt.core</a>&nbsp;/&nbsp;<a href="./-when.html">When</a><br/>
+<br/>
+<h1>When</h1>
+<code><span class="keyword">interface </span><span class="identifier">When</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../com.code42.jenkins.pipelinekt.core.writer/-groovy-script/index.html"><span class="identifier">GroovyScript</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/core/src/main/kotlin/com/code42/jenkins/pipelinekt/core/When.kt#L5">(source)</a>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-all-of/index.html">AllOf</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AllOf</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-any-of/index.html">AnyOf</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">AnyOf</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-before/index.html">Before</a></h4>
+</td>
+<td>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">Before</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-branch/index.html">Branch</a></h4>
+</td>
+<td>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">Branch</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-building-tag/index.html">BuildingTag</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">BuildingTag</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-changelog/index.html">Changelog</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Changelog</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-change-request/index.html">ChangeRequest</a></h4>
+</td>
+<td>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">ChangeRequest</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-change-set/index.html">ChangeSet</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ChangeSet</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-environment/index.html">Environment</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Environment</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-equals/index.html">Equals</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Equals</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-expression/index.html">Expression</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Expression</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-literal/index.html">Literal</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Literal</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-not/index.html">Not</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Not</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-tag/index.html">Tag</a></h4>
+</td>
+<td>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">Tag</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../com.code42.jenkins.pipelinekt.internal.when/-triggered-by/index.html">TriggeredBy</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">TriggeredBy</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-when.html"><span class="identifier">When</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

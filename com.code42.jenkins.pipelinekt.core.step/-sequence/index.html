@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Sequence - pipelinekt</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../index.html">com.code42.jenkins.pipelinekt.core.step</a>&nbsp;/&nbsp;<a href="./index.html">Sequence</a><br/>
+<br/>
+<h1>Sequence</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Sequence</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-declarative-step.html"><span class="identifier">DeclarativeStep</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/core/src/main/kotlin/com/code42/jenkins/pipelinekt/core/step/Sequence.kt#L6">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Sequence</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.step.Sequence$<init>(kotlin.collections.List((com.code42.jenkins.pipelinekt.core.step.Step)))/steps">steps</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-step/index.html"><span class="identifier">Step</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="steps.html">steps</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">steps</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-step/index.html"><span class="identifier">Step</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="and-then.html">andThen</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">andThen</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.step.Sequence$andThen(com.code42.jenkins.pipelinekt.core.step.Step)/next">next</span><span class="symbol">:</span>&nbsp;<a href="../-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="any.html">any</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">any</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.step.Sequence$any(kotlin.Function1((com.code42.jenkins.pipelinekt.core.step.Step, kotlin.Boolean)))/fn">fn</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains.html">contains</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.step.Sequence$contains(com.code42.jenkins.pipelinekt.core.step.Step)/other">other</span><span class="symbol">:</span>&nbsp;<a href="../-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="flatten.html">flatten</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">flatten</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Sequence</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-empty.html">isEmpty</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="preceded-by.html">precededBy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">precededBy</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.step.Sequence$precededBy(com.code42.jenkins.pipelinekt.core.step.Step)/previous">previous</span><span class="symbol">:</span>&nbsp;<a href="../-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-groovy.html">toGroovy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toGroovy</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.step.Sequence$toGroovy(com.code42.jenkins.pipelinekt.core.writer.GroovyWriter)/writer">writer</span><span class="symbol">:</span>&nbsp;<a href="../../com.code42.jenkins.pipelinekt.core.writer/-groovy-writer/index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

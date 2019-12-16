@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Stage.Matrix - pipelinekt</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../../index.html">com.code42.jenkins.pipelinekt.core.stage</a>&nbsp;/&nbsp;<a href="../index.html">Stage</a>&nbsp;/&nbsp;<a href="./index.html">Matrix</a><br/>
+<br/>
+<h1>Matrix</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Matrix</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../index.html"><span class="identifier">Stage</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/core/src/main/kotlin/com/code42/jenkins/pipelinekt/core/stage/Stage.kt#L129">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Matrix</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.stage.Stage.Matrix$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.stage.MatrixBody, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.When)), kotlin.collections.List((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.core.Post)/name">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.stage.Stage.Matrix$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.stage.MatrixBody, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.When)), kotlin.collections.List((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.core.Post)/matrixBody">matrixBody</span><span class="symbol">:</span>&nbsp;<a href="../../-matrix-body/index.html"><span class="identifier">MatrixBody</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.stage.Stage.Matrix$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.stage.MatrixBody, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.When)), kotlin.collections.List((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.core.Post)/whenBlock">whenBlock</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../../com.code42.jenkins.pipelinekt.core/-when.html"><span class="identifier">When</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;emptyList()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.stage.Stage.Matrix$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.stage.MatrixBody, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.When)), kotlin.collections.List((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.core.Post)/options">options</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../../com.code42.jenkins.pipelinekt.core/-stage-option.html"><span class="identifier">StageOption</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;emptyList()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.stage.Stage.Matrix$<init>(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.stage.MatrixBody, kotlin.collections.List((com.code42.jenkins.pipelinekt.core.When)), kotlin.collections.List((com.code42.jenkins.pipelinekt.core.StageOption)), com.code42.jenkins.pipelinekt.core.Post)/post">post</span><span class="symbol">:</span>&nbsp;<a href="../../../com.code42.jenkins.pipelinekt.core/-post/index.html"><span class="identifier">Post</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Post()<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="agent.html">agent</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">agent</span><span class="symbol">: </span><a href="../../../com.code42.jenkins.pipelinekt.core/-agent.html"><span class="identifier">Agent</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="matrix-body.html">matrixBody</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">matrixBody</span><span class="symbol">: </span><a href="../../-matrix-body/index.html"><span class="identifier">MatrixBody</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="name.html">name</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><span class="identifier">Str</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="options.html">options</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">options</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../../com.code42.jenkins.pipelinekt.core/-stage-option.html"><span class="identifier">StageOption</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post.html">post</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">post</span><span class="symbol">: </span><a href="../../../com.code42.jenkins.pipelinekt.core/-post/index.html"><span class="identifier">Post</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tools.html">tools</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">tools</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../../com.code42.jenkins.pipelinekt.core/-tool.html"><span class="identifier">Tool</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="when-block.html">whenBlock</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">whenBlock</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../../com.code42.jenkins.pipelinekt.core/-when.html"><span class="identifier">When</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="to-groovy.html">toGroovy</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toGroovy</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.core.stage.Stage.Matrix$toGroovy(com.code42.jenkins.pipelinekt.core.writer.GroovyWriter)/writer">writer</span><span class="symbol">:</span>&nbsp;<a href="../../../com.code42.jenkins.pipelinekt.core.writer/-groovy-writer/index.html"><span class="identifier">GroovyWriter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Docker.ImageOps - pipelinekt</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">pipelinekt</a>&nbsp;/&nbsp;<a href="../../index.html">com.code42.jenkins.pipelinekt.internal.step.scripted</a>&nbsp;/&nbsp;<a href="../index.html">Docker</a>&nbsp;/&nbsp;<a href="./index.html">ImageOps</a><br/>
+<br/>
+<h1>ImageOps</h1>
+<code><span class="keyword">interface </span><span class="identifier">ImageOps</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a></code> <a href="https://github.com/code42/pipelinekt/tree/master/internal/src/main/kotlin/com/code42/jenkins/pipelinekt/internal/step/scripted/Docker.kt#L15">(source)</a>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="inside.html">inside</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">inside</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$inside(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.step.Step)/args">args</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span>&nbsp;<span class="symbol">=</span>&nbsp;"".strSingle()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$inside(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.step.Step)/steps">steps</span><span class="symbol">:</span>&nbsp;<a href="../../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pull.html">pull</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">pull</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="push.html">push</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">push</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$push(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/tagName">tagName</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$push(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/force">force</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bool</span>&nbsp;<span class="symbol">=</span>&nbsp;true.boolVar()<span class="symbol">)</span><span class="symbol">: </span><a href="../../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="run.html">run</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">run</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$run(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/args">args</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span>&nbsp;<span class="symbol">=</span>&nbsp;"".strSingle()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$run(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str)/command">command</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span>&nbsp;<span class="symbol">=</span>&nbsp;"".strDouble()<span class="symbol">)</span><span class="symbol">: </span><a href="../../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tag.html">tag</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">tag</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$tag(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/tagName">tagName</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$tag(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Bool)/force">force</span><span class="symbol">:</span>&nbsp;<span class="identifier">Bool</span>&nbsp;<span class="symbol">=</span>&nbsp;true.boolVar()<span class="symbol">)</span><span class="symbol">: </span><a href="../../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="with-run.html">withRun</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">withRun</span><span class="symbol">(</span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$withRun(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.step.Step, com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/args">args</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span>&nbsp;<span class="symbol">=</span>&nbsp;"".strSingle()<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$withRun(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.step.Step, com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/command">command</span><span class="symbol">:</span>&nbsp;<span class="identifier">Str</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$withRun(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.step.Step, com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/steps">steps</span><span class="symbol">:</span>&nbsp;<a href="../../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a><span class="symbol">, </span><span class="identifier" id="com.code42.jenkins.pipelinekt.internal.step.scripted.Docker.ImageOps$withRun(com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.vars.Var.Literal.Str, com.code42.jenkins.pipelinekt.core.step.Step, com.code42.jenkins.pipelinekt.core.vars.Var.Variable)/containerVariable">containerVariable</span><span class="symbol">:</span>&nbsp;<span class="identifier">Variable</span>&nbsp;<span class="symbol">=</span>&nbsp;"container".groovyVariable()<span class="symbol">)</span><span class="symbol">: </span><a href="../../../com.code42.jenkins.pipelinekt.core.step/-step/index.html"><span class="identifier">Step</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
