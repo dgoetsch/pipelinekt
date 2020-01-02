@@ -160,14 +160,19 @@ subprojects {
                     name = "GitHubPackages"
                     
                     url = uri("https://maven.pkg.github.com/$githubRepo")
-                    credentials(HttpHeaderCredentials::class) {
-                        name = "Authorization"
-                        value = "Bearer ${System.getenv("GITHUB_TOKEN")}"
+                    val token = System.getenv("GITHUB_TOKEN")
+                    token?.let {
+                        credentials(HttpHeaderCredentials::class) {
+                            name = "Authorization"
+                            value = "Bearer ${it}"
+                        }
+                        authentication {
+                            create<HttpHeaderAuthentication>("header")
+                        }
+                    }?: credentials {
+                        username = System.getProperty("github.packages.username") ?: System.getenv("GITHUBUSER")
+                        password = System.getProperty("github.packages.token") ?: System.getenv("GITHUBTOKEN")
                     }
-                    authentication {
-                        create<HttpHeaderAuthentication>("header")
-                    }
-                    
                 }
             }
         }
