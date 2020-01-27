@@ -1,3 +1,5 @@
+This change is contrived but will trigger a build
+
 # Dynamic Declarative Jenkinsfile in Kotlin
 
 pipelinekt is a kotlin library that improves the Jenkinsfile development experience, especially for large projects.
