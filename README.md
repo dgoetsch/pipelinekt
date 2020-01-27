@@ -1,4 +1,6 @@
-This change is contrived but will trigger a build
+[![Gitter](https://badges.gitter.im/pipelinekt/community.svg)](https://gitter.im/pipelinekt/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Actions Status](https://github.com/{owner}/{repo}/workflows/{workflow_name}/badge.svg)](https://github.com/{owner}/{repo}/actions)
+
 
 # Dynamic Declarative Jenkinsfile in Kotlin
 
