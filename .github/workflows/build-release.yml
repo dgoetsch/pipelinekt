@@ -19,7 +19,7 @@ jobs:
       - name: Gradle Build
         uses: eskatos/gradle-command-action@v1
         with:
-          arguments: build
+          arguments: --info build
       - name: Version
         run: echo "##[set-output name=version;]v$(cat version.txt)"
         id: release_version
